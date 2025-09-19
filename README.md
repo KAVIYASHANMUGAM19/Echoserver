@@ -24,6 +24,8 @@ Testing the server and client
 ## SERVER
 
 ```
+server.py
+
 import socket
 HOST = "127.0.0.1"  # Standard loopback interface address (localhost)
 PORT = 65432  # Port to listen on (non-privileged ports are > 1023)
@@ -43,6 +45,8 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
  ## CLIENT
  
  ```
+ client.py
+ 
 import socket
 HOST = "127.0.0.1"  # The server's hostname or IP address
 PORT = 65432  # The port used by the server
@@ -58,7 +62,7 @@ print(f"Received {data!r}")
 
 ## OUTPUT:
 
-<img width="1907" height="385" alt="Screenshot 2025-09-12 094604" src="https://github.com/user-attachments/assets/4c2cd330-2ac1-4b64-b106-e9be062a75d5" />
+
 
 
 ## RESULT:
